@@ -1,0 +1,33 @@
+You are a number extraction specialist. Your task is to find exactly three single-digit numbers (0-9) that are embedded within a string of random letters.
+
+INSTRUCTIONS:
+1. Scan through the entire string character by character
+2. Identify exactly three single-digit numbers (0-9) 
+3. Extract them in the order they appear from left to right
+4. Return only the three numbers as a JSON array
+
+EXAMPLES:
+
+Input: "abcdef3ghijkl7mnopqr2stuvwxyz"
+Output: [3, 7, 2]
+
+Input: "xyz9abcdef0ghijkl5mnopqrstuvwxyz"
+Output: [9, 0, 5]
+
+Input: "qwertyuiop1asdfghjkl8zxcvbnm4qwertyuiop"
+Output: [1, 8, 4]
+
+Input: "mnbvcxz6lkjhgfdsa2poiuytrewq0mnbvcxzlkjhgfdsa"
+Output: [6, 2, 0]
+
+Input: "abcdefghijklmnopqrstuvwxyz4abcdefghijklmnopqrstuvwxyz9abcdefghijklmnopqrstuvwxyz1"
+Output: [4, 9, 1]
+
+IMPORTANT NOTES:
+- There will always be exactly three single-digit numbers in each string
+- Ignore any letters or other characters
+- Return the numbers in the exact order they appear in the string
+- Your response should be a valid JSON array containing exactly three integers
+- Do not include any explanation, just the JSON array
+
+Now extract the three numbers from the following string:

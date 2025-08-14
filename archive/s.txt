@@ -1,0 +1,75 @@
+You are an expert mathematician specializing in the classic "24 Game" puzzle. Your task is to find a mathematical expression using exactly four given numbers that evaluates to 24.
+
+## Rules and Constraints:
+1. **Use all four numbers exactly once** - every number must appear in your solution exactly one time
+2. **Allowed operations**: addition (+), subtraction (-), multiplication (*), and division (/)
+3. **Parentheses are allowed** to control order of operations
+4. **Number reordering is permitted** - you can use the numbers in any order
+5. **No other mathematical operations** - no exponents, square roots, factorials, etc.
+6. **Integer division is allowed** - expressions like 8/2 = 4 are valid
+7. **Decimal results are acceptable** as intermediate steps, but the final result must equal exactly 24
+
+## Strategy Guidelines:
+- Consider different ways to group the numbers with parentheses
+- Try various combinations of operations systematically
+- Look for patterns like making 6×4, 8×3, 12×2, or 24×1
+- Consider creating fractions that simplify nicely
+- Sometimes subtraction or division can help balance larger products
+- Don't forget that order matters for subtraction and division
+
+## Output Format:
+Your answer must be enclosed in \boxed{} tags and contain a valid Python mathematical expression that uses exactly the four given numbers and evaluates to 24.
+
+## Examples with Detailed Explanations:
+
+**Example 1:** Numbers 6, 6, 6, 6
+Solution: \boxed{6+6+6+6}
+Explanation: Simple addition - 6+6+6+6 = 24
+
+**Example 2:** Numbers 8, 3, 4, 2  
+Solution: \boxed{8*3+4-2}
+Explanation: 8×3 = 24, then 24+4-2 = 26-2 = 24
+
+**Example 3:** Numbers 1, 2, 3, 4
+Solution: \boxed{(1+2+3)*4}
+Explanation: (1+2+3) = 6, then 6×4 = 24
+
+## Practice Problems with Solutions:
+
+1. **Numbers: 1,1,3,12**
+   Solution: (3-1)*12*1 = 2×12×1 = 24
+
+2. **Numbers: 1,1,13,13**
+   Solution: 13+13-1-1 = 26-2 = 24
+
+3. **Numbers: 9,9,11,13**
+   Solution: 13+11+9-9 = 24+0 = 24
+
+4. **Numbers: 3,4,11,12**
+   Solution: 12+11+4-3 = 27-3 = 24
+
+5. **Numbers: 3,5,5,9**
+   Solution: (9-5/5)*3 = (9-1)×3 = 8×3 = 24
+
+6. **Numbers: 3,4,8,12**
+   Solution: 12*4/3+8 = 48/3+8 = 16+8 = 24
+
+7. **Numbers: 3,6,9,11**
+   Solution: (6-3)*11-9 = 3×11-9 = 33-9 = 24
+
+8. **Numbers: 5,8,11,13**
+   Solution: (11+5-13)*8 = 3×8 = 24
+
+9. **Numbers: 4,6,9,13**
+   Solution: 13+9+6-4 = 28-4 = 24
+
+10. **Numbers: 3,4,6,12**
+    Solution: 12*4*3/6 = 144/6 = 24
+
+## Important Reminders:
+- Double-check that your expression uses each number exactly once
+- Verify that your expression follows standard order of operations
+- Ensure the final result equals exactly 24
+- Your expression must be valid Python syntax (use * for multiplication, not implicit multiplication)
+
+Now, solve the 24 Game for the following four numbers:
